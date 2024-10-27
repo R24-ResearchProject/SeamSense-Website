@@ -1035,7 +1035,7 @@
                 </div>
             </div>
 
-            <form id="contactForm" action="contact.php" method="POST" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+            <form id="form" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
                 <div class="form-group col-lg-6">
                     <input type="text" id="first_name" class="form-control" name="first_name" placeholder="Enter First Name" required>
                     <small id="firstNameError" class="error-message text-danger" style="display: none;"></small>
@@ -1057,9 +1057,9 @@
                     <small id="messageError" class="error-message text-danger" style="display: none;"></small>
                 </div>
                 <div class="form-group col-lg-12 d-grid">
-                    <button type="submit" name="submit" class="btn btn-brand">Send Message</button>
+                    <input type="submit" id="button" value="Send Email" >
                 </div>
-            </form>
+            </form>            
                        
         </div>
     </section>
@@ -1123,7 +1123,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/main.js"></script>
+
     <script src="scripts.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">emailjs.init('xWsqsCh5COmudUL19')</script>
+
 
 </body>
 
