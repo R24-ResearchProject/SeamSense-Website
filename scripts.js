@@ -13,6 +13,8 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'Send Email';
       alert('Sent!');
+      this.reset(); // Clear the form fields
+      location.reload(); // Refresh the page
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
